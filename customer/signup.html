@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="signup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Register as customer</h1>
+        <form id="signUpForm">
+            <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+            <input type="text" id="fName" placeholder="First Name" required>
+            <input type="text" id="lName" placeholder="Last Name" required>
+            <input type="email" id="rEmail" placeholder="Email" required>
+            <input type="password" id="rPassword" placeholder="Password" required>
+            <button id="submitSignUp">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+        <button class="backButton" onclick="window.location.href='index.html'">Back</button>
+    </div>
+</body>
+</html>
