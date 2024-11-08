@@ -173,7 +173,19 @@ header {
     font-weight: bold;
 }
 
-/* Categories and Products Section */
+
+
+
+
+
+
+
+
+
+
+
+
+                        /* Categories and Products Section */
 .categories, .products {
     padding: 20px;
     background-color: var(--light-beige); /* Light beige with slight transparency */

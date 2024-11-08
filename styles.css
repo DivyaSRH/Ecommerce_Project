@@ -1,3 +1,5 @@
+    /* INDEX */
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -173,7 +175,8 @@ header {
     font-weight: bold;
 }
 
-/* Categories and Products Section */
+/*                                                       Categories and Products Section */
+/*                                                       Categories and Products Section */
 .categories, .products {
     padding: 20px;
     background-color: var(--light-beige); /* Light beige with slight transparency */
@@ -181,12 +184,12 @@ header {
     margin: 10px;
     position: relative; /* Allows absolute positioning of elements inside */
 }
-
+ 
 h2 {
     margin-bottom: 10px;
     color: var(--warm-orange); /* Warm orange for headings */
 }
-
+ 
 /* Flex layout for the list of items */
 .category-list, .product-list {
     display: flex;
@@ -195,7 +198,7 @@ h2 {
     padding: 0 20px; /* Padding on the sides */
     margin-bottom: 20px; /* Space below the list */
 }
-
+ 
 .category, .product {
     flex: 1 1 18%; /* Make each box take up 18% of the row, with some flexibility */
     height: 150px; /* Increased height */
@@ -209,7 +212,7 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
 }
-
+ 
 /* Right-align the View More button at the bottom of each section */
 .view-more {
     display: block;
@@ -218,6 +221,200 @@ h2 {
     text-decoration: none;
     color: var(--warm-orange); /* Warm orange for links */
     font-weight: bold;
+}
+ 
+/* Footer Styling */
+footer {
+    background-color: rgba(75, 56, 50, 0.9); /* Dark brown with slight transparency */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* White text for main footer text */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+}
+ 
+/* Right-aligned link */
+.footer-right {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+ 
+.footer-right a {
+    color: var(--warm-orange); /* Warm orange color */
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+/* Centered "ABOUT US!" link */
+.footer-center {
+    margin-bottom: 10px;
+}
+ 
+.footer-center a {
+    color: var(--warm-orange); /* Warm orange color */
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+/* Copyright styling */
+footer p {
+    color: #fff; /* White color for copyright text */
+    margin: 0;
+}
+ 
+   /* Below  is product page, Above is home page */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   /*                                               Product Details Section */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Warmer Theme Colors */
+:root {
+    --warm-orange: #ff8c42; /* Warm orange */
+    --warm-red: #ff5733; /* Warm red for accents */
+    --light-beige: #f5e8d0; /* Light beige background */
+    --dark-brown: #4b3832; /* Warm dark brown for text and header */
+    --light-tan: #e3c9b7; /* Light tan for backgrounds */
+}
+
+/* Header Styling */
+header {
+    background-color: var(--dark-brown); /* Dark brown background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--warm-orange); /* Warm orange for logo text */
+}
+
+.tagline {
+    font-size: 14px;
+    color: var(--light-tan); /* Warmer light tan for tagline */
+}
+
+/* Search bar expands to take available space */
+.search-bar {
+    flex-grow: 1; /* Allows search bar to expand */
+    padding: 8px;
+    border: 1px solid var(--dark-brown); /* Dark brown border */
+    border-radius: 5px;
+    background-color: var(--light-tan); /* Light tan background */
+    color: var(--dark-brown); /* Dark brown text */
+}
+
+/* Right-aligned buttons */
+.buttons {
+    display: flex;
+    gap: 10px; /* Space between login and signup buttons */
+}
+
+.login-btn, .signup-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--warm-orange); /* Warm orange background */
+    color: #fff; /* White text */
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.login-btn:hover, .signup-btn:hover {
+    background-color: var(--warm-red); /* Warm red hover effect */
+}
+
+/* Products Section */
+.products-section {
+    display: flex;
+    flex-direction: column; /* Stack product containers vertically */
+    padding: 20px;
+    background-color: var(--light-beige); /* Light beige background */
+}
+
+.product-container {
+    display: flex; /* Align product image and details in a row */
+    margin-bottom: 20px; /* Space between product containers */
+    background-color: var(--dark-brown); /* Dark brown for product container */
+    padding: 15px; /* Padding for product container */
+    border-radius: 8px; /* Rounded corners */
+    color: var(--light-tan); /* Light tan text */
+}
+
+/* Product Image */
+.product-image {
+    flex: 1; /* Make this take half of the space */
+    display: flex;
+    flex-direction: column; /* Stack image text vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.image-placeholder {
+    background-color: #ccc; /* Placeholder background color for image */
+    width: 150px; /* Width of the image placeholder */
+    height: 100px; /* Height of the image placeholder */
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Product Details */
+.product-details {
+    flex: 2; /* Make this take double the space */
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+}
+
+/* Login Prompt */
+.login-prompt {
+    text-align: center;
+    margin: 20px; /* Space around prompt */
+    padding: 20px;
+    background-color: var(--light-tan); /* Light tan background */
+    border-radius: 5px; /* Rounded corners */
 }
 
 /* Footer Styling */
@@ -232,125 +429,14 @@ footer {
     text-align: center;
 }
 
-/* Right-aligned link */
-.footer-right {
-    width: 100%;
-    text-align: right;
-    margin-bottom: 10px;
-}
-
-.footer-right a {
-    color: var(--warm-orange); /* Warm orange color */
+footer a {
+    color: var(--warm-orange); /* Warm orange for links */
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Centered "ABOUT US!" link */
-.footer-center {
-    margin-bottom: 10px;
-}
-
-.footer-center a {
-    color: var(--warm-orange); /* Warm orange color */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Copyright styling */
 footer p {
-    color: #fff; /* White color for copyright text */
-    margin: 0;
-}
-
-   /* Below  is product page, Above is home page */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   /*                                               Product Details Section */
-.product-details {
-    display: flex;
-    padding: 20px;
-    background-color: var(--light-beige); /* Light beige background */
-}
-
-.product-images {
-    flex: 1; /* Take up 50% of the width */
-    padding-right: 20px; /* Spacing between images and info */
-}
-
-.image-display {
-    margin-bottom: 20px;
-    position: relative; /* Allows positioning of the navigation buttons */
-    background-color: #ddd; /* Placeholder background color */
-    height: 200px; /* Adjust based on your image size */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-button {
-    background-color: var(--warm-orange); /* Warm orange for buttons */
-    color: #fff; /* White text */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px; /* Increase button size */
-    position: absolute; /* Position absolute to the image display */
-}
-
-.nav-button.left {
-    left: 10px; /* Position left button */
-}
-
-.nav-button.right {
-    right: 10px; /* Position right button */
-}
-
-.image-thumbnails {
-    display: flex;
-    gap: 10px; /* Space between thumbnails */
-}
-
-.image-thumbnails img {
-    width: 50px; /* Thumbnail size */
-    height: auto;
-    cursor: pointer;
-}
-
-/* Other styles remain the same */
-
-.logo-image {
-    width: 150px; /* Adjust width as necessary */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below the logo */
+    margin: 0; /* Remove margin from footer text */
 }
 
 
@@ -369,7 +455,45 @@ footer p {
 
 
 
-/*                                                              Login Section Styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                      Login Section Styles */
 .login-section {
     display: flex;
     flex-direction: column;
@@ -654,180 +778,132 @@ footer p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*                          Product2 */
-
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Warmer Theme Colors */
+:root {
+    --warm-orange: #ff8c42;    /* Warm orange */
+    --warm-red: #ff5733;       /* Warm red for accents */
+    --light-beige: #f5e8d0;    /* Light beige background */
+    --dark-brown: #4b3832;     /* Warm dark brown for text and header */
+    --light-tan: #e3c9b7;      /* Light tan for backgrounds */
+}
+
+/* Body */
+body {
+    background-color: #f5e8d0; /* Lighter beige to make the background lighter */
+    color: #333; /* Darker color for the text to contrast well with the lighter background */
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
 header {
-    background-color: #99ccff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--dark-brown); /* Dark brown background */
     padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--light-tan); /* Light tan text */
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
 }
 
 .logo-text {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.search-bar {
-    width: 300px;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.search-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
     font-size: 20px;
+    font-weight: bold;
+    color: var(--warm-orange); /* Warm orange for logo text */
 }
 
-.buttons button {
-    margin-left: 10px;
-    padding: 5px 10px;
+.tagline {
+    font-size: 14px;
+}
+
+/* Search bar styling */
+.search-bar {
+    flex-grow: 1; /* Allows search bar to expand */
+    padding: 8px;
+    border: 1px solid var(--dark-brown); /* Dark brown border */
+    border-radius: 5px;
+    background-color: var(--light-tan); /* Light tan background */
+    color: var(--dark-brown); /* Dark brown text */
+}
+
+/* Button styling */
+.buttons {
+    display: flex;
+    gap: 10px; /* Space between login and signup buttons */
+}
+
+.login-btn, .signup-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--warm-orange); /* Warm orange background */
+    color: #fff; /* White text */
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.login-btn:hover, .signup-btn:hover {
+    background-color: var(--warm-red); /* Warm red hover effect */
+}
+
+/* Forgot Password Section */
+.forgot-password-section {
+    background-color: #f9f5e9; /* Very light beige background for the main section */
+    padding: 40px;
+    margin: 40px auto;
+    width: 50%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Form styling */
+.forgot-password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+.reset-btn {
+    padding: 10px 20px;
+    background-color: var(--warm-orange); /* Warm orange */
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.product-display {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #ffffff;
-    margin: 20px;
-    border-radius: 8px;
+.reset-btn:hover {
+    background-color: var(--warm-red); /* Warm red for hover */
 }
 
-.product-item {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.product-image {
-    background-color: #cccccc;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.product-details p {
-    margin: 5px 0;
-}
-
-.login-reminder {
-    background-color: #e0e0e0;
-    padding: 15px;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 8px;
-}
-
+/* Footer Section */
 footer {
-    background-color: #99ccff;
-    padding: 10px;
+    background-color: rgba(75, 56, 50, 0.9); /* Dark warm brown */
+    padding: 20px;
+    color: #fff;
     text-align: center;
 }
 
-.footer-links a {
-    color: #000;
+.footer-center {
+    margin-bottom: 10px;
+}
+
+.footer-center a, .footer-right a {
+    color: var(--warm-orange); /* Warm orange */
     text-decoration: none;
-    margin: 0 10px;
-}
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*                                                   Categories Section Styles */
-.categories-section {
-    padding: 20px;
-    background-color: var(--light-beige); /* Light beige background to maintain consistency */
-    border-radius: 8px; /* Rounded corners */
-    margin: 20px; /* Margin around the categories section */
-}
-
-.categories-section h2 {
-    margin-bottom: 20px;
-    color: var(--warm-orange); /* Warm orange for the heading */
-}
-
-/* Flex layout for the list of categories */
-.category-list {
-    display: flex;
-    flex-wrap: wrap; /* Allow categories to wrap to the next line */
-    justify-content: space-between; /* Space between items */
-    gap: 20px; /* Space between items */
-}
-
-/* Individual category styling */
-.category {
-    flex: 1 1 calc(25% - 20px); /* Make each box take up 25% of the row, with flexibility */
-    height: 150px; /* Fixed height */
-    background-color: var(--dark-brown); /* Dark brown for boxes */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: bold;
-    border: 2px solid var(--warm-orange); /* Warm orange border */
-    color: var(--light-tan); /* Light tan text */
-    border-radius: 8px;
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-/* Hover effect for category boxes */
-.category:hover {
-    background-color: var(--warm-orange); /* Change background on hover */
-    color: var(--dark-brown); /* Dark brown text on hover */
-}
-
-/* Footer Styles */
-footer {
-    background-color: rgba(75, 56, 50, 0.9); /* Dark brown with slight transparency */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff; /* White text for main footer text */
-    flex-direction: column; /* Stack items vertically */
-    text-align: center;
-}
+/* Additional styling for Product Page and Other Sections can be added here as necessary */
