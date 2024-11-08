@@ -1,0 +1,833 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Warmer Theme Colors */
+:root {
+    --warm-orange: #ff8c42;    /* Warm orange */
+    --warm-red: #ff5733;       /* Warm red for accents */
+    --light-beige: #f5e8d0;    /* Light beige background */
+    --dark-brown: #4b3832;     /* Warm dark brown for text and header */
+    --light-tan: #e3c9b7;      /* Light tan for backgrounds */
+}
+
+/* Header Styling */
+header {
+    background-color: var(--dark-brown); /* Dark brown background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--warm-orange); /* Warm orange for logo text */
+}
+
+.tagline {
+    font-size: 14px;
+    color: var(--light-tan); /* Warmer light tan for tagline */
+}
+
+/* Search bar expands to take available space */
+.search-bar {
+    flex-grow: 1; /* Allows search bar to expand */
+    padding: 8px;
+    border: 1px solid var(--dark-brown); /* Dark brown border */
+    border-radius: 5px;
+    background-color: var(--light-tan); /* Light tan background */
+    color: var(--dark-brown); /* Dark brown text */
+}
+
+/* Right-aligned buttons */
+.buttons {
+    display: flex;
+    gap: 10px; /* Space between login and signup buttons */
+}
+
+.login-btn, .signup-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--warm-orange); /* Warm orange background */
+    color: #fff; /* White text */
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.login-btn:hover, .signup-btn:hover {
+    background-color: var(--warm-red); /* Warm red hover effect */
+}
+
+/* Electronics-Themed Background */
+body {
+    background-image: url('background.jpg'); /* Path to electronics-themed background */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Adding a semi-transparent overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Slightly lighter overlay for warmth */
+    z-index: -1;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(75, 56, 50, 0.9); /* Dark warm brown with slight transparency */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-tan); /* Light tan text */
+    position: relative;
+}
+
+/* Left side logo and tagline */
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--warm-orange); /* Warm orange for logo */
+}
+
+.tagline {
+    font-size: 12px; /* Smaller font size */
+    color: var(--light-tan); /* Light tan for tagline text */
+    margin-top: 4px; /* Adds some space below the logo */
+}
+
+/* Right side for login, signup, and search bar */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Space between login and signup buttons */
+}
+
+.search-bar {
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-brown); /* Dark brown border */
+    background-color: var(--light-tan); /* Light tan background */
+    color: var(--dark-brown); /* Dark text for contrast */
+    margin-top: 5px;
+}
+
+.login-btn, .signup-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--warm-orange); /* Warm orange background */
+    color: var(--dark-brown); /* Dark text for contrast */
+    cursor: pointer;
+}
+
+/* Slider Section */
+.slider {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(75, 56, 50, 0.8); /* Dark warm background for contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--warm-orange); /* Warm color for slide text */
+}
+
+.slide {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Categories and Products Section */
+.categories, .products {
+    padding: 20px;
+    background-color: var(--light-beige); /* Light beige with slight transparency */
+    border-radius: 8px;
+    margin: 10px;
+    position: relative; /* Allows absolute positioning of elements inside */
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: var(--warm-orange); /* Warm orange for headings */
+}
+
+/* Flex layout for the list of items */
+.category-list, .product-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between items */
+    padding: 0 20px; /* Padding on the sides */
+    margin-bottom: 20px; /* Space below the list */
+}
+
+.category, .product {
+    flex: 1 1 18%; /* Make each box take up 18% of the row, with some flexibility */
+    height: 150px; /* Increased height */
+    background-color: var(--dark-brown); /* Dark brown for boxes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid var(--warm-orange); /* Warm orange border */
+    color: var(--light-beige); /* Light beige text */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Right-align the View More button at the bottom of each section */
+.view-more {
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--warm-orange); /* Warm orange for links */
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(75, 56, 50, 0.9); /* Dark brown with slight transparency */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* White text for main footer text */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+}
+
+/* Right-aligned link */
+.footer-right {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.footer-right a {
+    color: var(--warm-orange); /* Warm orange color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Centered "ABOUT US!" link */
+.footer-center {
+    margin-bottom: 10px;
+}
+
+.footer-center a {
+    color: var(--warm-orange); /* Warm orange color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Copyright styling */
+footer p {
+    color: #fff; /* White color for copyright text */
+    margin: 0;
+}
+
+   /* Below  is product page, Above is home page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*                                               Product Details Section */
+.product-details {
+    display: flex;
+    padding: 20px;
+    background-color: var(--light-beige); /* Light beige background */
+}
+
+.product-images {
+    flex: 1; /* Take up 50% of the width */
+    padding-right: 20px; /* Spacing between images and info */
+}
+
+.image-display {
+    margin-bottom: 20px;
+    position: relative; /* Allows positioning of the navigation buttons */
+    background-color: #ddd; /* Placeholder background color */
+    height: 200px; /* Adjust based on your image size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button {
+    background-color: var(--warm-orange); /* Warm orange for buttons */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px; /* Increase button size */
+    position: absolute; /* Position absolute to the image display */
+}
+
+.nav-button.left {
+    left: 10px; /* Position left button */
+}
+
+.nav-button.right {
+    right: 10px; /* Position right button */
+}
+
+.image-thumbnails {
+    display: flex;
+    gap: 10px; /* Space between thumbnails */
+}
+
+.image-thumbnails img {
+    width: 50px; /* Thumbnail size */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Other styles remain the same */
+
+.logo-image {
+    width: 150px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                              Login Section Styles */
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px); /* Adjust height to leave space for header and footer */
+    background-color: var(--light-beige); /* Light beige background */
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+    color: var(--warm-orange); /* Warm orange for the logo */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    width: 300px; /* Fixed width for the form */
+}
+
+.login-form label {
+    font-size: 16px; /* Label font size */
+    color: var(--dark-brown); /* Dark brown for labels */
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid var(--dark-brown); /* Dark brown border */
+    border-radius: 5px;
+    background-color: var(--light-tan); /* Light tan background */
+    color: var(--dark-brown); /* Dark text for contrast */
+}
+
+.recaptcha {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.recaptcha label {
+    margin-top: 10px; /* Space above reCAPTCHA label */
+}
+
+/* Button Styling */
+.login-btn {
+    padding: 10px;
+    background-color: var(--warm-orange); /* Warm orange background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size for better visibility */
+}
+
+/* Hover effect for login button */
+.login-btn:hover {
+    background-color: var(--warm-red); /* Warm red hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(75, 56, 50, 0.9); /* Dark brown with slight transparency */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* White text for main footer text */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                  Signup Section Styles */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Warmer Theme Colors */
+:root {
+    --warm-orange: #ff8c42;    /* Warm orange */
+    --warm-red: #ff5733;       /* Warm red for accents */
+    --light-beige: #f5e8d0;    /* Light beige background */
+    --dark-brown: #4b3832;     /* Warm dark brown for text and header */
+    --light-tan: #e3c9b7;      /* Light tan for backgrounds */
+}
+
+/* Header Styling */
+header {
+    background-color: var(--dark-brown); /* Dark brown background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--warm-orange); /* Warm orange for logo text */
+}
+
+.tagline {
+    font-size: 14px;
+    color: var(--light-tan); /* Warmer light tan for tagline */
+}
+
+/* Search bar expands to take available space */
+.search-bar {
+    flex-grow: 1; /* Allows search bar to expand */
+    padding: 8px;
+    border: 1px solid var(--dark-brown); /* Dark brown border */
+    border-radius: 5px;
+    background-color: var(--light-tan); /* Light tan background */
+    color: var(--dark-brown); /* Dark brown text */
+}
+
+/* Right-aligned buttons */
+.buttons {
+    display: flex;
+    gap: 10px; /* Space between login and signup buttons */
+}
+
+.login-btn, .signup-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--warm-orange); /* Warm orange background */
+    color: #fff; /* White text */
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.login-btn:hover, .signup-btn:hover {
+    background-color: var(--warm-red); /* Warm red hover effect */
+}
+
+/* Signup Section Styles */
+.signup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px); /* Adjust height to leave space for header and footer */
+    background-color: transparent; /* Set background to transparent */
+    padding: 20px; /* Add padding to separate content from the edges */
+    margin: 20px auto; /* Center the section and give it a margin from the top and bottom */
+    max-width: 400px; /* Set a maximum width for the signup section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.signup-section h2 {
+    margin-bottom: 20px;
+    color: var(--warm-orange); /* Warm orange for the heading */
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    width: 100%; /* Use full width of the signup section */
+}
+
+.signup-form label {
+    font-size: 16px; /* Label font size */
+    color: var(--dark-brown); /* Dark brown for labels */
+}
+
+.signup-form input {
+    padding: 10px;
+    border: 1px solid var(--dark-brown); /* Dark brown border */
+    border-radius: 5px;
+    background-color: var(--light-tan); /* Light tan background */
+    color: var(--dark-brown); /* Dark text for contrast */
+}
+
+.recaptcha {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.recaptcha label {
+    margin-top: 10px; /* Space above reCAPTCHA label */
+}
+
+/* Button Styling */
+.signup-btn {
+    padding: 10px;
+    background-color: var(--warm-orange); /* Warm orange background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size for better visibility */
+}
+
+/* Hover effect for signup button */
+.signup-btn:hover {
+    background-color: var(--warm-red); /* Warm red hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(75, 56, 50, 0.9); /* Dark brown with slight transparency */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* White text for main footer text */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+}
+
+/* Right-aligned link */
+.footer-right {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.footer-right a {
+    color: var(--warm-orange); /* Warm orange color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Centered "ABOUT US!" link */
+.footer-center {
+    margin-bottom: 10px;
+}
+
+.footer-center a {
+    color: var(--warm-orange); /* Warm orange color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Copyright styling */
+footer p {
+    color: #fff; /* White color for copyright text */
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                          Product2 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #99ccff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-display {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.product-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    background-color: #cccccc;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.product-details p {
+    margin: 5px 0;
+}
+
+.login-reminder {
+    background-color: #e0e0e0;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #99ccff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                   Categories Section Styles */
+.categories-section {
+    padding: 20px;
+    background-color: var(--light-beige); /* Light beige background to maintain consistency */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px; /* Margin around the categories section */
+}
+
+.categories-section h2 {
+    margin-bottom: 20px;
+    color: var(--warm-orange); /* Warm orange for the heading */
+}
+
+/* Flex layout for the list of categories */
+.category-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow categories to wrap to the next line */
+    justify-content: space-between; /* Space between items */
+    gap: 20px; /* Space between items */
+}
+
+/* Individual category styling */
+.category {
+    flex: 1 1 calc(25% - 20px); /* Make each box take up 25% of the row, with flexibility */
+    height: 150px; /* Fixed height */
+    background-color: var(--dark-brown); /* Dark brown for boxes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid var(--warm-orange); /* Warm orange border */
+    color: var(--light-tan); /* Light tan text */
+    border-radius: 8px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for category boxes */
+.category:hover {
+    background-color: var(--warm-orange); /* Change background on hover */
+    color: var(--dark-brown); /* Dark brown text on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(75, 56, 50, 0.9); /* Dark brown with slight transparency */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* White text for main footer text */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+}
