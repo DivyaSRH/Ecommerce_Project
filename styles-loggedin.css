@@ -1,0 +1,256 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Warmer Theme Colors */
+:root {
+    --warm-orange: #ff8c42;    /* Warm orange */
+    --warm-red: #ff5733;       /* Warm red for accents */
+    --light-beige: #f5e8d0;    /* Light beige background */
+    --dark-brown: #4b3832;     /* Warm dark brown for text and header */
+    --light-tan: #e3c9b7;      /* Light tan for backgrounds */
+}
+/* Header Styling */
+header {
+    background-color: var(--dark-brown); /* Dark brown background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--light-tan); /* Ensuring text color is light tan for visibility */
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Adjust logo size */
+    height: auto;
+}
+
+.header-title {
+    font-size: 24px; /* Increase size for consistency with Eazy Tech */
+    font-weight: bold; /* Bold for emphasis */
+    color: var(--warm-orange); /* Warm orange for logo text */
+}
+
+/* Search Bar */
+.search-bar {
+    flex-grow: 1; /* Allows search bar to expand */
+    padding: 8px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 5px;
+    color: var(--dark-brown); /* Dark brown text for visibility */
+    font-size: 16px; /* Ensuring search bar font size matches */
+    margin-left: 10px; /* Adding some space from the title */
+}
+
+/* User Icon and Cart */
+.user-cart {
+    display: flex;
+    gap: 15px;
+}
+
+.user-cart img {
+    width: 30px; /* Adjust icon size */
+    height: auto;
+}
+
+/* Body Background */
+body {
+    background-color: var(--light-beige); /* Light beige background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+
+/* Header Styling */
+header {
+    background-color: var(--dark-brown); /* Dark brown background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Adjust logo size */
+    height: auto;
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+    flex-grow: 1; /* Allows search bar to expand */
+    padding: 8px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 5px;
+}
+
+/* User Icon and Cart */
+.user-cart {
+    display: flex;
+    gap: 15px;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Sidebar */
+.profile-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Space between sidebar and profile info */
+    background-color: #ffffff; /* White background for sidebar */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 200px; /* Fixed width for the sidebar */
+}
+
+.profile-image {
+    border-radius: 50%; /* Circular profile image */
+    width: 100px; /* Profile image size */
+    height: 100px; /* Profile image size */
+    margin-bottom: 20px;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width for links */
+    text-align: center; /* Center align links */
+    margin-top: 20px; /* Space above links */
+}
+
+/* Profile Section */
+.profile-section {
+    flex-grow: 1; /* Allow profile section to take remaining space */
+    background-color: #ffffff; /* White background for the profile box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.profile-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Profile Details */
+.profile-details {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-details div {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Change Password Button */
+.change-password {
+    padding: 10px;
+    background-color: var(--warm-orange);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--dark-brown); /* Dark brown for footer */
+    padding: 20px;
+    color: #fff; /* White text for footer */
+    text-align: center;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: var(--warm-orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sidebar Links */
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width for links */
+    text-align: center; /* Center align links */
+    margin-top: 20px; /* Space above links */
+}
+
+.sidebar-button {
+    display: inline-block; /* Allows padding and margins */
+    padding: 10px;
+    background-color: var(--warm-orange); /* Button color */
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px 0; /* Space between buttons */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.sidebar-button:hover {
+    background-color: var(--warm-red); /* Change color on hover */
+}
+
+
+/* Edit Button */
+.edit-button {
+    background-color: var(--warm-orange); /* Button color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for the button */
+    cursor: pointer;
+    font-size: 14px; /* Font size for the button */
+    float: right; /* Position button to the right */
+    margin-top: -5px; /* Adjust position to be closer to the title */
+}
+
+.edit-button:hover {
+    background-color: var(--warm-red); /* Change color on hover */
+}
+
+/* Profile Title Styling */
+.profile-title {
+    display: flex; /* Use flexbox to align title and button */
+    justify-content: space-between; /* Space between title and button */
+    align-items: center; /* Center vertically */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
