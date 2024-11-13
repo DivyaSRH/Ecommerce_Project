@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Eazy Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Arshad-styles.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="catmain.css">
+    <script type="module" src="catmain.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <div class="logo-text">Eazy Tech</div>
+            <div class="tagline">The Science today is the tech of tomorrow</div>
+        </div>
+        <input type="text" placeholder="Electronics for every need" class="search-bar">
+        <div class="buttons">
+            <button id="profileBtn">Profile</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Category Page</h1>
+        <div id="photoGallery" class="gallery-grid"></div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-right">
+            <a href="#">NOT A USER? SIGN IN</a>
+        </div>
+        <div class="footer-center">
+            <a href="#">ABOUT US!</a>
+        </div>
+        <p>© Eazy Tech ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <!-- Firebase App and Database SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+
+    <!-- App script -->
+    <script type="module" src="catmain.js"></script>
+</body>
+</html>
