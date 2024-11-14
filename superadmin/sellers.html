@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Sellers</title>
+    <style>
+        /* Include the same header styles as homepage */
+        body {
+            background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #5a6d8c;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header button {
+            padding: 12px 20px;
+            margin-left: 15px;
+            background-color: #ffffff;
+            color: #5a6d8c;
+            font-size: 1rem;
+            font-weight: bold;
+            border: 2px solid #5a6d8c;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .header button:hover {
+            background-color: #5a6268;
+            color: white;
+        }
+
+        .content {
+            padding-top: 120px;
+            text-align: center;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #5a6268;
+        }
+
+        /* List styles */
+        .list-container {
+            margin-top: 30px;
+        }
+
+        .list-item {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .list-item:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button id="profile">Profile</button>
+        <button id="logout">Logout</button>
+    </div>
+
+    <div class="content">
+        <h1>List of Sellers</h1>
+
+        <!-- Back button to navigate to homepage -->
+        <button class="back-btn" id="backButton">Back</button>
+
+        <!-- Sellers list here (Example) -->
+        <div class="list-container">
+            <div class="list-item">Seller 1</div>
+            <div class="list-item">Seller 2</div>
+            <div class="list-item">Seller 3</div>
+            <!-- Add more sellers dynamically -->
+        </div>
+    </div>
+
+    <!-- Include the sellers.js script for functionality -->
+    <script type="module" src="./sellers.js"></script>
+</body>
+</html>

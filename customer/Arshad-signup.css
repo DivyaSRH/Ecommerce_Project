@@ -1,0 +1,139 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Warmer Theme Colors */
+:root {
+    --warm-orange: #ff8c42; /* Warm orange */
+    --warm-red: #ff5733; /* Warm red for accents */
+    --light-beige: #f5e8d0; /* Light beige background */
+    --dark-brown: #4b3832; /* Warm dark brown for text and header */
+    --light-tan: #e3c9b7; /* Light tan for backgrounds */
+}
+
+/* Header styles */
+header {
+    background-color: var(--dark-brown);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--warm-orange); /* Warm orange for logo text */
+}
+
+.tagline {
+    font-size: 14px;
+    color: var(--light-tan); /* Warmer light tan for tagline */
+}
+
+/* Search bar expands to take available space */
+.search-bar {
+    flex-grow: 1; /* Allows search bar to expand */
+    padding: 8px;
+    border: 1px solid var(--dark-brown); /* Dark brown border */
+    border-radius: 5px;
+    background-color: var(--light-tan); /* Light tan background */
+    color: var(--dark-brown); /* Dark brown text */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: var(--warm-orange);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--warm-red);
+}
+
+/* Signup Section Styles */
+.signup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px);
+    background-color: #ffffff; /* Set background to white */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    width: 100%; /* Use full width of the signup section */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    padding: 10px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 5px;
+    background-color: var(--light-tan); /* Light tan background */
+    color: var(--dark-brown); /* Dark text for contrast */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(75, 56, 50, 0.9);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* White text for main footer text */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+}
+
+.footer-right {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.footer-center a {
+    color: var(--warm-orange); /* Warm orange color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p {
+    color: #fff; /* White color for copyright text */
+    margin: 0;
+}
+

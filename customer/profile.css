@@ -1,0 +1,44 @@
+/* Import existing colors from matin-login.css */
+@import "matin-login.css";
+
+/* Profile Page Main Container */
+.profile-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-beige); /* Use matching background */
+}
+
+.profile-container h1 {
+    color: var(--dark-brown); /* Match the warm theme color */
+    margin-bottom: 20px;
+}
+
+/* Profile Information Section */
+.profile-info {
+    background-color: #ffffff; /* White background for profile info box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limit width for better readability */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-info h2 {
+    font-size: 18px;
+    color: var(--dark-brown); /* Consistent color scheme */
+    margin-bottom: 15px;
+}
+
+.profile-info div {
+    font-size: 16px;
+    color: var(--dark-brown); /* Dark brown text for readability */
+}
+
+.profile-info div span {
+    color: var(--warm-orange); /* Use the warm orange for emphasis */
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header button {
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .header button:hover {
+            background-color: #5a6268;
+        }
+
+        .profile-container {
+            width: 350px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #444444;
+            margin-bottom: 20px;
+        }
+
+        .profile-item {
+            width: 100%;
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333333;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .profile-item span {
+            font-weight: bold;
+            color: #666666;
+        }
+
+        .logout-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #ff4b5c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .logout-btn:hover {
+            background-color: #e14050;
+        }
+    </style>
+    <script type="module" src="./profile.js"></script>
+</head>
+<body>
+    <!-- Header with Back Button -->
+    <div class="header">
+        <button id="backButton">Back</button>
+    </div>
+
+    <!-- Profile Content -->
+    <div class="profile-container">
+        <div class="profile-header">Your Profile</div>
+        <div class="profile-item">First Name: <span id="profileFName"></span></div>
+        <div class="profile-item">Last Name: <span id="profileLName"></span></div>
+        <div class="profile-item">Email: <span id="profileEmail"></span></div>
+        <button class="logout-btn" id="logout">Logout</button>
+    </div>
+
+    <script>
+        // Back button functionality
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.history.back(); // Go back to the previous page
+        });
+
+        // Logout button functionality
+        document.getElementById('logout').addEventListener('click', () => {
+            localStorage.removeItem("loggedInUserId");
+            window.location.href = 'index.html'; // Redirect to login page
+        });
+    </script>
+</body>
+</html>
